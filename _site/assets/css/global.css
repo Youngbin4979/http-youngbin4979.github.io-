@@ -126,8 +126,8 @@ div.lazy {
 }
 
 .email-text {
-    font-family: Courier, monospace;
-    font-size: 1.1rem;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 /* Increase font sizes for card content */
@@ -192,19 +192,19 @@ div.lazy {
 
 /* Publication text improvements */
 .publication-card h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     margin-bottom: 0.5rem !important;
 }
 
 .publication-card .small {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.5;
     margin-bottom: 0.3rem !important;
 }
 
 .publication-card .abstract-links {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
 }
 
 /* Better spacing for publication items */
@@ -214,18 +214,18 @@ div.lazy {
 
 /* Apply same font sizing to publications page as selected publications */
 .bg-white.shadow-sm.rounded-xl h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.4;
     margin-bottom: 0.5rem !important;
 }
 
 .bg-white.shadow-sm.rounded-xl .small {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.5;
     margin-bottom: 0.3rem !important;
 }
 
 .bg-white.shadow-sm.rounded-xl .abstract-links {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
 }
 
