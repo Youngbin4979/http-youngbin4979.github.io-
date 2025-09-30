@@ -121,11 +121,6 @@ div.lazy {
     font-size: 100%;
 }
 
-.email-text {
-    font-family: Courier, monospace;
-    font-size: var(--base-font-size);
-}
-
 /* Card content font sizes */
 .card-body,
 .card-body .small,
@@ -142,20 +137,20 @@ div.lazy {
     font-weight: 500;
 }
 
-/* Publication text improvements */
-.publication-card h5 {
+/* Common publication list styling - applied to both homepage and publications page */
+.publication-list h5 {
     font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 0.5rem !important;
 }
 
-.publication-card .small {
+.publication-list .small {
     font-size: 1rem !important;
     line-height: 1.5;
     margin-bottom: 0.3rem !important;
 }
 
-.publication-card .abstract-links {
+.publication-list .abstract-links {
     font-size: 1rem !important;
 }
 
