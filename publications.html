@@ -10,7 +10,7 @@ navbar_title: Publications
 {% assign working_pubs = working_pubs | concat: empty_pubs %}
 {% assign regular_pubs = all_pubs | where_exp: "item", "item.pub != nil" %}
 {% assign regular_pubs = regular_pubs | where_exp: "item", "item.pub != ''" %}
-{% assign pubs_by_year = regular_pubs | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign pubs_by_year = regular_pubs | sort: "date" | reverse | group_by_exp: "item", "item.pub_date" %}
 
 <div class="row">
     <div class="col-12">
