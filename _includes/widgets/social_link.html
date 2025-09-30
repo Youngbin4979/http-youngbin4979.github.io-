@@ -10,7 +10,7 @@
 {% case include.type %}
     {% when 'email' %}
         <a class="pr-3 no-break" href="mailto:{{ include.value | encode_email }}">
-            <i class="{{ include.icon }}"></i> {{ include.value | replace: "@", "(at)" }}
+            <i class="{{ include.icon }}"></i> {{ include.label }}
         </a>
     {% when 'gscholar' %}
         {% if include.value contains 'scholar.google' %}
