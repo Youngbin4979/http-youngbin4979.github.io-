@@ -3,8 +3,7 @@ secondary_name: ""
 navbar_name: "Youngbin Choi"
 
 positions:
-- logo: /assets/images/badges/postech.jpg  # Logo is optional
-  name: Combined Ph.D. Student
+- name: Combined Ph.D. Student
 # - name: Position 2 without logo
 
 
@@ -38,13 +37,11 @@ portrait_caption: >-
 
 education:
 - name: <strong>POSTECH</strong>
-  logo: /assets/images/badges/postech.jpg
   position: >- 
     Combined Ph.D. Student @ Machine Learning Lab <br/>
     Advised by Prof. Dongwoo Kim
   date: Feb. 2022 - present
 - name: <strong>POSTECH</strong>
-  logo: /assets/images/badges/postech.jpg
   position: B.S. in Computer Science
   date: Feb. 2018 - Feb. 2022
 
