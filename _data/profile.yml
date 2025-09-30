@@ -8,7 +8,7 @@ positions:
 # - name: Position 2 without logo
 
 
-email: "choi.youngbin@postech.ac.kr"
+email: "email"
 # cv_link: link-to-your-cv-file
 cv_link: /assets/cv/Youngbin_Choi_CV.pdf
 gscholar: oh2ATg8AAAAJ
@@ -34,7 +34,7 @@ short_bio: >-
 
 portrait_url: /profile.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+   
 
 education:
 - name: <strong>POSTECH</strong>

@@ -1,0 +1,231 @@
+@charset "utf-8";
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem !important;
+    padding-top: 5.0rem;
+}
+
+/* Override responsive body font size */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 1.1rem !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+h1, .h1 { font-size: 2.8rem !important; }
+h2, .h2 { font-size: 2.2rem !important; }
+h3, .h3 { font-size: 1.8rem !important; }
+h4, .h4 { font-size: 1.5rem !important; }
+h5, .h5 { font-size: 1.3rem !important; }
+h6, .h6 { font-size: 1.1rem !important; }
+
+/* Override responsive font sizes */
+@media (max-width: 767.98px) {
+    h1, .h1 { font-size: 2.8rem !important; }
+    h2, .h2 { font-size: 2.2rem !important; }
+    h3, .h3 { font-size: 1.8rem !important; }
+    h4, .h4 { font-size: 1.5rem !important; }
+    h5, .h5 { font-size: 1.3rem !important; }
+    h6, .h6 { font-size: 1.1rem !important; }
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.card-img-overlay {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl-bottom {
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+.rounded-xl-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+
+.text-profile-position {
+    font-weight: 400;
+    font-size: 1.2rem !important;
+}
+
+.text-profile-bio {
+    /* font-family: "Raleway"; */
+    font-weight: 400;
+    font-size: 1.15rem !important;
+    line-height: 1.6;
+}
+
+/* Override responsive profile text sizes */
+@media (max-width: 767.98px) {
+    .text-profile-position {
+        font-size: 1.2rem !important;
+    }
+    
+    .text-profile-bio {
+        font-size: 1.15rem !important;
+    }
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 180px;
+    max-height: 120px;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+div.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.badge-publication {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+    font-size: 1.1rem;
+}
+
+/* Increase font sizes for card content */
+.card-body {
+    font-size: 1.05rem !important;
+}
+
+.card-body .small {
+    font-size: 1.05rem !important;
+}
+
+.card-body .small em {
+    font-size: 1.05rem !important;
+}
+
+.card-body .media-body {
+    font-size: 1.05rem !important;
+}
+
+/* Increase font sizes for lists */
+.card-body ul li {
+    font-size: 1.05rem !important;
+}
+
+/* Increase font sizes for links */
+.card-body a {
+    font-size: 1.05rem !important;
+}
+
+/* Override responsive card text sizes */
+@media (max-width: 767.98px) {
+    .card-body {
+        font-size: 1.05rem !important;
+    }
+    
+    .card-body .small {
+        font-size: 1.05rem !important;
+    }
+    
+    .card-body .small em {
+        font-size: 1.05rem !important;
+    }
+    
+    .card-body .media-body {
+        font-size: 1.05rem !important;
+    }
+    
+    .card-body ul li {
+        font-size: 1.05rem !important;
+    }
+    
+    .card-body a {
+        font-size: 1.05rem !important;
+    }
+}
+
+/* Specific styling for education date text */
+.card-body .small em {
+    font-size: 1.1rem !important;
+    font-weight: 500;
+}
+
+/* Publication text improvements */
+.publication-card h5 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem !important;
+}
+
+.publication-card .small {
+    font-size: 1rem !important;
+    line-height: 1.5;
+    margin-bottom: 0.3rem !important;
+}
+
+.publication-card .abstract-links {
+    font-size: 1rem !important;
+}
+
+/* Better spacing for publication items */
+.publication-item {
+    padding: 1rem 0 !important;
+}
+
+/* Apply same font sizing to publications page as selected publications */
+.bg-white.shadow-sm.rounded-xl h5 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem !important;
+}
+
+.bg-white.shadow-sm.rounded-xl .small {
+    font-size: 1rem !important;
+    line-height: 1.5;
+    margin-bottom: 0.3rem !important;
+}
+
+.bg-white.shadow-sm.rounded-xl .abstract-links {
+    font-size: 1rem !important;
+}
+
