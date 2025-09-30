@@ -8,7 +8,7 @@ positions:
 # - name: Position 2 without logo
 
 
-email: ""
+email: "choi.youngbin@postech.ac.kr"
 # cv_link: link-to-your-cv-file
 cv_link: /assets/cv/Youngbin_Choi_CV.pdf
 gscholar: oh2ATg8AAAAJ
@@ -37,14 +37,13 @@ portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: POSTECH
+- name: <strong>POSTECH</strong>
   logo: /assets/images/badges/postech.jpg
   position: >- 
-    Machine Learning Lab <br/>
-    Combined Ph.D. Student <br/>
+    Combined Ph.D. Student @ Machine Learning Lab <br/>
     Advised by Prof. Dongwoo Kim
   date: Feb. 2022 - present
-- name: POSTECH
+- name: <strong>POSTECH</strong>
   logo: /assets/images/badges/postech.jpg
   position: B.S. in Computer Science
   date: Feb. 2018 - Feb. 2022
