@@ -1,0 +1,44 @@
+{% comment %}
+  Social link component
+  Parameters:
+    - type: link type (email, gscholar, linkedin, github, twitter, orcid)
+    - value: link value or username
+    - icon: FontAwesome icon class
+    - label: display label
+{% endcomment %}
+
+{% case include.type %}
+    {% when 'email' %}
+        <a class="pr-3 no-break" href="mailto:{{ include.value | encode_email }}">
+            <i class="{{ include.icon }}"></i> <span class="email-text">{{ include.value | replace: "@", "(at)" }}</span>
+        </a>
+    {% when 'gscholar' %}
+        {% if include.value contains 'scholar.google' %}
+            {% assign url = include.value %}
+        {% else %}
+            {% assign url = 'https://scholar.google.com/citations?user=' | append: include.value %}
+        {% endif %}
+        <a class="pr-3 no-break" target="_blank" href="{{ url }}">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+    {% when 'linkedin' %}
+        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ include.value }}">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+    {% when 'github' %}
+        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ include.value }}">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+    {% when 'twitter' %}
+        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ include.value }}">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+    {% when 'orcid' %}
+        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ include.value }}">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+    {% when 'wechat' %}
+        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
+            <i class="{{ include.icon }}"></i> {{ include.label }}
+        </a>
+{% endcase %}

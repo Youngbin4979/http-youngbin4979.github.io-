@@ -59,49 +59,58 @@
                 <hr />
                 <div class="row">
                     <div class="col">
-                        <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
-                        </a>
+                        {% if site.data.profile.email %}
+                            {% include widgets/social_link.html 
+                                type='email' 
+                                value=site.data.profile.email 
+                                icon='fas fa-at' %}
+                        {% endif %}
 
                         {% if site.data.profile.gscholar %}
-                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                        {%- assign gscholar_url = site.data.profile.gscholar -%}
-                        {%- else -%}
-                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                        {%- endif -%}
-                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
-                            <i class="fab fa-google-scholar"></i> Google Scholar
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='gscholar' 
+                                value=site.data.profile.gscholar 
+                                icon='fab fa-google-scholar' 
+                                label='Google Scholar' %}
                         {% endif %}
                         
                         {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='linkedin' 
+                                value=site.data.profile.linkedin 
+                                icon='fab fa-linkedin' 
+                                label='LinkedIn' %}
                         {% endif %}
 
                         {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='github' 
+                                value=site.data.profile.github 
+                                icon='fab fa-github' 
+                                label='GitHub' %}
                         {% endif %}
 
                         {% if site.data.profile.wechat_qrcode %}
-                        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
-                            <i class="fab fa-weixin"></i> WeChat
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='wechat' 
+                                icon='fab fa-weixin' 
+                                label='WeChat' %}
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='twitter' 
+                                value=site.data.profile.twitter 
+                                icon='fab fa-twitter' 
+                                label='Twitter' %}
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                            <i class="fab fa-orcid"></i> ORCID
-                        </a>
+                            {% include widgets/social_link.html 
+                                type='orcid' 
+                                value=site.data.profile.orcid 
+                                icon='fab fa-orcid' 
+                                label='ORCID' %}
                         {% endif %}
                     </div>
                 </div>

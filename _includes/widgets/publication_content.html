@@ -1,0 +1,24 @@
+{% comment %}
+  Reusable publication content component
+  Parameters:
+    - item: publication item object
+    - pub_status: optional publication status text (e.g., "Under review")
+{% endcomment %}
+
+<h5 class="mt-0 mb-1 font-weight-normal">{{ include.item.title }}</h5>
+<p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=include.item.authors %}</p>
+<p class="mt-0 mb-0 small">
+    {% if include.pub_status %}
+        {{ include.pub_status }} {{ include.item.pub_date }}
+    {% else %}
+        {{ include.item.pub_pre }}<i>{{ include.item.pub }}</i>{{ include.item.pub_post }} {{ include.item.pub_date }} {{ include.item.pub_last }}
+    {% endif %}
+    <span data-semantic-scholar-id="{{ include.item.semantic_scholar_id }}"></span>
+</p>
+<p class="mt-0 mb-0 small text-muted">{{ include.item.abstract }}</p>
+
+{% if include.item.links %}
+<p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+    {% include widgets/link_list.html links=include.item.links %}
+</p>
+{% endif %}
