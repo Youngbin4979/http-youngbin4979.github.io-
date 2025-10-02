@@ -15,5 +15,5 @@ authors:
 - MoonJeong Park
 - Dongwoo Kim
 links:
-  Arxiv: 
+  Arxiv: https://arxiv.org/abs/2510.00777
 ---
