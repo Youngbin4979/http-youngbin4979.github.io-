@@ -16,4 +16,5 @@ authors:
 
 links:
   Arxiv: https://arxiv.org/abs/2502.11360
+  Github: https://github.com/ml-postech/GeoDANO
 ---
